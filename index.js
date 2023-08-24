@@ -10,7 +10,6 @@ const server = new ApolloServer({
     resolvers,
     persistedQueries: false,
 });
-
 mongoose.connect(MONGODB, {useBigInt64: true})
     .then(() => {
         console.log("MongoDB Connection successful");
