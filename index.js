@@ -7,7 +7,8 @@ const typeDefs = require("./graphql/typeDefs");
 const resolvers = require("./graphql/resolver");
 const server = new ApolloServer({
     typeDefs,
-    resolvers
+    resolvers,
+    cache: "bounded",
 });
 
 mongoose.connect(MONGODB, {useBigInt64: true})
