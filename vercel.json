@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "/",
+      "dest": "./index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "./index.js"
+    }
+  ],
+  "env": {
+    "MONGODB_URI": "mongodb+srv://sriram_venkatesh:asdfghjkl@cluster0.8moomsn.mongodb.net/?retryWrites=true&w=majority"
+  }
+}
